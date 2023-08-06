@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>каталог</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="page-container-catalog">
     <header class="page-header-catalog">
+      <div class="device-logo-box">
+        <img src="images/device-logo.svg" alt="девайс-логотип">
+      </div>
       <nav class="user-menu-header-catalog">
         <ul class="user-menu-search">
-          <li>Текст поиска</li>
-          <li></li>
+          <li>
+            <div class="user-menu-form-box">
+              <form class="user-menu-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="site-search">
+              <!-- <span class="visually-hidden">Поиск по сайту</span> -->
+              </label>
+              <input class="field" type="product" placeholder="Текст поиска" name="product" id="site-search" required>
+              <button class="button button-site-search" type="submit">Найти</button>
+              </form>
+            </div>
+          </li>
           <li>Коля Петухов</li>
           <li>Выйти</li>
         </ul>
@@ -26,19 +37,27 @@
       </nav>
       <nav class="main-menu">
         <div class="menu-product-catalog">
-          <h3>каталог товаров</h3>
+          <a href="#">каталог товаров</a>
+          <ul class="menu-product-subcatalog">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптер</a></li>
+          </ul>
           </div>
         <ul class="menu-services">
-          <li>доставка</li>
-          <li>гарантия</li>
-          <li>контакты</li>
+          <li class="menu-services-item"><a href="">Доставка</a></li>
+          <li class="menu-services-item"><a href="">Гарантия</a></li>
+          <li class="menu-services-item"><a href="">Контакты</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="monopodes-for-selfy">
         <div class="monopodes-for-selfy-text-container">
-          <h2 class="monopodes-for-selfy-title">Моноподы для селфи</h2>
+          <h1 class="monopodes-for-selfy-title">Моноподы для селфи</h1>
           <ul class="monopodes-menu">
             <li class="monopodes-menu-item">Главная</li>
             <li class="monopodes-menu-item">Каталог товаров</li>
@@ -146,14 +165,12 @@
           </form>
         </div>
         <div class="products-list-container">
-          <div>
-            <ul>
-              <li>сортировка</li>
-              <li>популярные</li>
-              <li class="sort-item"></li>
-              <li class="sort-item"></li>
-            </ul>
-          </div>
+          <select class="=select-control" aria-label="Сортировка.">
+            <option value="popular">Популярные</option>
+            <option value="cheap">Дешевые</option>
+            <option value="expensive">Дорогие</option>
+          </select>
+
           <ul class="products-list">
             <li class="product-card">
               <a class="product-card-img" href="#">
@@ -164,11 +181,13 @@
               <span class="product-card-price">500 ₽</span>
             </li>
             <li class="product-card">
-              <a class="product-card-img" href="#">
-                <img class="product-card-image" src="images/selfy-prof.jpg" width="360" height="360"
-                  alt="Профессиональная селфи-палка">
+              <a class="product-card-link" href="#">
+                <!-- <img class="product-card-image" src="images/selfy-prof.jpg" width="360" height="360"
+                  alt="Профессиональная селфи-палка"> убрать картинку их ссылки -->
               </a>
-              <span>Профессиональная селфи-палка</span>
+              <a class="product-card-link" href="#">
+                <h3>Профессиональная селфи-палка</h3>
+              </a>
               <span class="product-card-price">1 500 ₽</span>
             </li>
             <li class="product-card">
@@ -189,7 +208,8 @@
             </li>
           </ul>
         </div>
-        <h3>Загрузить еще</h3>
+        <a href="#">Загрузить еще
+        </a>
         <div class="pagination-container">
           <span>назад</span>
           <ul class="pagination">
@@ -208,22 +228,21 @@
             <li class="pagination-item">
               <a class="pagination-link" href="#">15</a>
             </li>
+            <a class="pagination-next" href="#">
+              <span class="pagination-nest-text-">
+              Вперед
+              </span>
+            </a>
           </ul>
-          <span>вперёд</span>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <h2 class="visually-hidden">device</h2>
-      <svg width="145" height="36" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M27.2188 0V35.3H19.6135V32.9C17.9124 34.8 15.5107 36 12.1084 36C5.5038 36 0 30.2 0 22.7C0 15.2 5.5038 9.4 12.1084 9.4C15.5107 9.4 18.0124 10.6 19.6135 12.5V0H27.2188ZM19.6135 22.7C19.6135 18.9 17.1118 16.5 13.6094 16.5C10.107 16.5 7.60524 18.9 7.60524 22.7C7.60524 26.5 10.107 28.9 13.6094 28.9C17.1118 28.8 19.6135 26.5 19.6135 22.7Z" fill="black"/>
-        <path d="M43.7298 29.1999C45.8313 29.1999 47.5325 28.3999 48.5332 27.2999L54.6374 30.7999C52.1356 34.1999 48.4331 35.9999 43.6298 35.9999C35.0238 35.9999 29.6201 30.1999 29.6201 22.6999C29.6201 15.1999 35.0238 9.3999 43.0294 9.3999C50.4345 9.3999 55.8382 15.0999 55.8382 22.6999C55.8382 23.7999 55.7381 24.7999 55.538 25.6999H37.6256C38.6263 28.2999 40.9279 29.1999 43.7298 29.1999ZM48.333 20.0999C47.5325 17.1999 45.2309 16.0999 42.9293 16.0999C40.0273 16.0999 38.126 17.4999 37.4255 20.0999H48.333Z" fill="black"/>
-        <path d="M82.1563 10.1001L72.8499 35.3001H64.2439L54.9375 10.1001H63.3433L68.647 26.1001L73.9506 10.1001C73.9506 10.1001 82.1563 10.1001 82.1563 10.1001Z" fill="black"/>
-        <path d="M83.458 10.1001H91.0633V35.3001H83.458V10.1001Z" fill="black"/>
-        <path d="M93.665 22.6999C93.665 15.1999 99.369 9.3999 107.074 9.3999C111.978 9.3999 116.281 11.9999 118.482 15.8999L111.878 19.6999C110.977 17.8999 109.176 16.8999 106.974 16.8999C103.672 16.8999 101.27 19.2999 101.27 22.6999C101.27 26.1999 103.672 28.4999 106.974 28.4999C109.176 28.4999 111.077 27.3999 111.878 25.6999L118.482 29.4999C116.381 33.3999 112.078 35.9999 107.074 35.9999C99.369 35.9999 93.665 30.1999 93.665 22.6999Z" fill="black"/>
-        <path d="M132.892 29.1999C134.993 29.1999 136.695 28.3999 137.695 27.2999L143.799 30.7999C141.298 34.1999 137.595 35.9999 132.792 35.9999C124.186 35.9999 118.782 30.1999 118.782 22.6999C118.782 15.1999 124.286 9.3999 132.191 9.3999C139.597 9.3999 145 15.0999 145 22.6999C145 23.7999 144.9 24.7999 144.7 25.6999H126.788C127.788 28.2999 130.09 29.1999 132.892 29.1999ZM137.595 20.0999C136.795 17.1999 134.493 16.0999 132.191 16.0999C129.289 16.0999 127.388 17.4999 126.688 20.0999H137.595Z" fill="black"/>
-        <path d="M83.458 0V10.1L91.0633 0H83.458Z" fill="#510094"/>
-        </svg>
+      <div>
+        <img src="images/device-logo.svg" alt="девайс-логотип">
+      </div>
+
       <section class="footer-main-info">
         <div class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.
         </div>
@@ -293,6 +312,6 @@
 
 
 
-  </div>
+
 </body>
 </html>

@@ -3,32 +3,70 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-
   <body>
-    <div class="page-container">
-      <header class="page-header">
-        <h1>device</h1>
+      <header class="page-header-index">
+        <div class="device-logo-box">
+          <img src="images/device-logo.svg" alt="девайс-логотип">
+        </div>
         <nav class="user-menu">
-          <ul class="user-menu-search">
-            <li>Поиск по сайту</li>
-            <li>Найти</li>
-            <li>Войти</li>
-          </ul>
-          <ul class="user-menu-compare">
-          <li lass="compare-product-image"></li>
-          <li class="compare-product">Сравнить</li>
-          <li>
-            <span class="visually-hidden">В корзине.</span>
-            <span class="menu-basket-numbers">2</span>
-          </li>
-          <li class="basket">Корзина</li>
-          </ul>
+          <div class="menu-box">
+             <ul class="user-menu-search">
+              <li>
+                  <div class="user-menu-form-box">
+                    <form class="user-menu-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <label for="site-search">
+                    <!-- <span class="visually-hidden">Поиск по сайту</span> -->
+                    </label>
+                    <input class="field" type="product" placeholder="Поиск по сайту" name="product" id="site-search" required>
+                    <button class="button button-site-search" type="submit">Найти</button>
+                    </form>
+                  </div>
+              </li>
+              <li>
+                <a class="user-login" href="#">
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 12H13C12.8 9.4 10.9 7.2 8.3 6.5C9.3 5.9 10 4.8 10 3.5C10 1.6 8.4 0 6.5 0C4.6 0 3 1.6 3 3.5C3 4.8 3.7 5.9 4.7 6.5C2.1 7.2 0.2 9.4 0 12Z" fill="black"/>
+                    </svg>
+                </a>
+                <span>Войти</span>
+              </li>
+            </ul>
+            <ul class="user-menu-compare">
+              <li lass="user-menu-compare-item">
+                <img src="images/compare-icon.svg" alt="Иконка сравнения">
+              </li>
+              <li class="user-menu-compare-item">Сравнить</li>
+              <li>
+                <a class="menu-list-favorites" href="#">
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z" fill="black"/>
+                  </svg>
+                <span class="visually-hidden">В корзине.</span>
+                <span class="menu-favorites-numbers">2</span>
+                </a>
+              </li>
+              <li class="user-menu-compare-item">Корзина</li>
+            </ul>
+          </div>
         </nav>
         <nav class="main-menu">
           <div class="menu-product-catalog">
             <h3>каталог товаров</h3>
+            <a href="catalog.html">
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle opacity="0.3" cx="25" cy="25" r="24" stroke="black" stroke-width="2"/>
+              <g opacity="0.3" clip-path="url(#clip0_38637_978)">
+              <path d="M33 24H26V17H24V24H17V26H24V33H26V26H33V24Z" fill="black"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_38637_978">
+              <rect width="16" height="16" fill="white" transform="translate(17 17)"/>
+              </clipPath>
+              </defs>
+              </svg>
+            </a>
           </div>
           <ul class="menu-services">
             <li>доставка</li>
@@ -36,22 +74,29 @@
             <li>контакты</li>
           </ul>
         </nav>
-        <div class="promotion">
-          <img src="images/kopter.jpg" alt="Квадрокоптер">
-          <h2>Порхает как бабочка, жалит как пчела!</h2>
-          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-          </p>
-          <h3>подробнее</h3>
-          <div class="copter-properties">
-            <span>800 м</span>
-            <p>Дальность полета</p>
-            <span>50 м</span>
-            <p>Радиус поражения</p>
+        <section class="promotion">
+          <div class="image-container">
+            <img src="images/kopter.jpg" alt="Квадрокоптер">
           </div>
-        </div>
+          <div class="promotion-text">
+            <h2>Порхает как бабочка, жалит как пчела!</h2>
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+            </p>
+            <h3>подробнее</h3>
+            <div class="copter-properties">
+              <span>800 м</span>
+              <p>Дальность полета</p>
+              <span>50 м</span>
+              <p>Радиус поражения</p>
+            </div>
+          </div>
+        </section>
       </header>
       <main>
-        <section class="product-categories">
+        <div class="main-container">
+
+        
+          <section class="product-categories">
           <ul class="categories-list">
             <li class="category-item category-item-vr">
               <div class="category-item-container">
@@ -90,13 +135,13 @@
               </div>
             </li>
           </ul>
-        </section>
-        <section class="delivery-box">
+          </section>
+          <section class="delivery-box">
           <div class="delivery">
-            <ul class="properties">
-              <li class="property-item">доставка</li>
-              <li class="property-item">гарантия</li>
-              <li class="property-item">кредит</li>
+            <ul class="delivery-properties">
+              <li class="delivery-property-item">доставка</li>
+              <li class="delivery-property-item">гарантия</li>
+              <li class="delivery-property-item">кредит</li>
             </ul>
             <div class="normal-delivery">
               <div class="normal-delivery-explanation">
@@ -116,8 +161,8 @@
               <h3>доставим редкий товар под заказ</h3>
             </div>
           </div>
-        </section>
-        <section class="about-us-contacts">
+          </section>
+          <section class="about-us-contacts">
           <div class="about-us">
             <h2>О нас</h2>
             <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -141,8 +186,8 @@
             <span>сб—вс: с 10:00 до 19:00</span>
             <span>Напишите нам</span>
           </div>
-        </section>
-        <section class="subscribe">
+          </section>
+          <section class="subscribe">
           <div class="subscribe-container">
             <div class="subscribe-explanation">
               <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
@@ -164,6 +209,7 @@
               </div>
             </div>
           </div>
+        </div>
         </section>
       </main>
       <footer class="page-footer">
@@ -242,6 +288,5 @@
           </div>
         </section>
       </footer>
-    </div>
   </body>
 </html>

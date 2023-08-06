@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/rubik/rubik-400.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/rubik/rubik-700.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-style: normal;
+  scr: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+*, *::before, *::after {
+  box-sizing: boreder-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.main-container {
+  flex-grow: 1;
+  
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ========= header ========== */
+
+
+
+.menu-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.user-menu-search {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+
+.user-menu-compare {
+  display: flex;
+  list-style: none;
+}
+
+
+.main-menu {
+display: flex;
+
+}
+
+
+.menu-product-catalog {
+  display: flex;
+}
+
+/* ========= END header-index ========== */
+
+
+.promotion {
+  display: flex;
+}
+
+
+/* ======== product-categories ====  */
+
+.categories-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+
+}
+
+
+/* ========END product-categories ====  */
+
+
+.categories-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+}
+
+/* ========= delivery ======== */
+
+.delivery-properties {
+  list-style: none;
+}
+
+
+
+/* ============ END delivery ====== */
+
+
+
+
+
+
+
+/* ============== catalog =========== */
+
+.menu-services-item:focus-within .subcatalog {
+    display: block;
+  }
+
+  .menu-product-subcatalog {
+    display: none
+  }
+
+}
