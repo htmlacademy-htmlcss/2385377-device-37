@@ -8,49 +8,66 @@
   <body>
       <header class="page-header-index">
         <div class="device-logo-box">
-          <img src="images/device-logo.svg" alt="девайс-логотип">
+          <a href="#">
+            <img src="images/device-logo.svg" alt="девайс-логотип">
+          </a>
         </div>
-        <nav class="user-menu">
-          <div class="menu-box">
-             <ul class="user-menu-search">
-              <li>
-                  <div class="user-menu-form-box">
-                    <form class="user-menu-form" action="https://echo.htmlacademy.ru/" method="post">
-                    <label for="site-search">
-                    <!-- <span class="visually-hidden">Поиск по сайту</span> -->
-                    </label>
-                    <input class="field" type="product" placeholder="Поиск по сайту" name="product" id="site-search" required>
-                    <button class="button button-site-search" type="submit">Найти</button>
-                    </form>
-                  </div>
-              </li>
-              <li>
-                <a class="user-login" href="#">
-                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="user-menu-container">
+          <form class="user-menu-form" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="search-form-group">
+            <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.7 14.3L12.6 11.2C13.5 10 14 8.6 14 7C14 3.1 10.9 0 7 0C3.1 0 0 3.1 0 7C0 10.9 3.1 14 7 14C8.6 14 10 13.5 11.2 12.6L14.3 15.7C14.5 15.9 14.7 16 15 16C15.6 16 16 15.6 16 15C16 14.8 15.9 14.5 15.7 14.3ZM2 7C2 4.2 4.2 2 7 2C9.8 2 12 4.2 12 7C12 9.8 9.8 12 7 12C4.2 12 2 9.8 2 7Z" fill="black"/>
+            </svg>
+            <label for="site-search">
+            <span class="visually-hidden">Поиск по сайту</span>
+              <input class="input-search" type="product" placeholder="Поиск по сайту" name="product" value="Поиск по сайту" id="site-search" required>
+            </label>
+            <button class="button-site-search" type="submit">Найти</button>
+            </fieldset>
+          </form>
+          <nav class="user-navigation">
+            <ul class="user-login">
+              <li class="user-login-list-item>
+                <a class="user-login-link" href="#">
+                  <svg aria-hidden="true" focusable="false" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 12H13C12.8 9.4 10.9 7.2 8.3 6.5C9.3 5.9 10 4.8 10 3.5C10 1.6 8.4 0 6.5 0C4.6 0 3 1.6 3 3.5C3 4.8 3.7 5.9 4.7 6.5C2.1 7.2 0.2 9.4 0 12Z" fill="black"/>
-                    </svg>
-                </a>
-                <span>Войти</span>
-              </li>
-            </ul>
-            <ul class="user-menu-compare">
-              <li lass="user-menu-compare-item">
-                <img src="images/compare-icon.svg" alt="Иконка сравнения">
-              </li>
-              <li class="user-menu-compare-item">Сравнить</li>
-              <li>
-                <a class="menu-list-favorites" href="#">
-                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z" fill="black"/>
+                  <span class="visually-hidden">Логин</span>
                   </svg>
-                <span class="visually-hidden">В корзине.</span>
-                <span class="menu-favorites-numbers">2</span>
                 </a>
               </li>
-              <li class="user-menu-compare-item">Корзина</li>
+              <li class="user-login-list-item">
+                <a href="#">
+                <span class="name-user">Войти</span>
+                </a>
+              </li>
             </ul>
-          </div>
-        </nav>
+            <div>
+            <ul class="shop-navigation">
+                <li lass="shop-navigation-item">
+                  <a class="shop-navigation-link" href="#">
+                  <svg class="user-menu-icon" aria-hidden="true" focusable="false" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 0H4V12H6V0Z" fill="black"/>
+                    <path d="M2 4H0V12H2V4Z" fill="black"/>
+                    <path d="M10 3H8V12H10V3Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">Сравнить</span>
+                    </a>
+                </li>
+                <li class="shop-navigation-item">Сравнить</li>
+                <li>
+                  <a class="menu-list-favorites" href="#">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z" fill="black"/>
+                    </svg>
+                  <span class="visually-hidden">В корзине.</span>
+                  <span class="menu-favorites-numbers">2</span>
+                  </a>
+                </li>
+                <li class="shop-navigation-item">Корзина</li>
+              </ul>
+          </nav>
+        </div>
+
         <nav class="main-menu">
           <div class="menu-product-catalog">
             <h3>каталог товаров</h3>
@@ -74,13 +91,26 @@
             <li>контакты</li>
           </ul>
         </nav>
+      </header>
+      <main>
+        <div class="main-container">
         <section class="promotion">
           <div class="image-container">
-            <img src="images/kopter.jpg" alt="Квадрокоптер">
+            <a href="#">
+                <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black"/>
+                  </svg>
+              </a>
+            <img class="kopter-image" src="images/kvadrokopter.jpg" alt="Квадрокоптер">
+            <a href="#">
+              <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z" fill="black"/>
+              </svg>
+           </a>
           </div>
-          <div class="promotion-text">
-            <h2>Порхает как бабочка, жалит как пчела!</h2>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+          <div class="promotion-info">
+            <h2 class="promotion-title">Порхает как бабочка, жалит как пчела!</h2>
+            <p class="promotion-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
             </p>
             <h3>подробнее</h3>
             <div class="copter-properties">
@@ -90,13 +120,28 @@
               <p>Радиус поражения</p>
             </div>
           </div>
-        </section>
-      </header>
-      <main>
-        <div class="main-container">
+          <div class="promo-indicators">
+            <ul class="indicator-list">
+              <li class="indicator-item black">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="6" cy="6" r="5" fill="black" stroke="black" stroke-width="2"/>
+                  </svg>
+              </li>
+              <li>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="6" cy="6" r="5" fill="white" stroke="black" stroke-width="2"/>
+                  </svg>
+              </li>
+              <li>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="6" cy="6" r="5" fill="white" stroke="black" stroke-width="2"/>
+                  </svg>
+              </li>
+            </ul>
 
-        
-          <section class="product-categories">
+          </div>
+        </section>
+        <section class="product-categories">
           <ul class="categories-list">
             <li class="category-item category-item-vr">
               <div class="category-item-container">
@@ -137,12 +182,12 @@
           </ul>
           </section>
           <section class="delivery-box">
-          <div class="delivery">
-            <ul class="delivery-properties">
-              <li class="delivery-property-item">доставка</li>
-              <li class="delivery-property-item">гарантия</li>
-              <li class="delivery-property-item">кредит</li>
-            </ul>
+            <div class="delivery">
+              <ul class="delivery-properties">
+                <li class="delivery-property-item">доставка</li>
+                <li class="delivery-property-item">гарантия</li>
+                <li class="delivery-property-item">кредит</li>
+              </ul>
             <div class="normal-delivery">
               <div class="normal-delivery-explanation">
                 <h2>Доставка</h2>

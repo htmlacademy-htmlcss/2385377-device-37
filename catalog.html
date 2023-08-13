@@ -7,28 +7,35 @@
 </head>
 <body>
     <header class="page-header-catalog">
-      <div class="device-logo-box">
-        <img src="images/device-logo.svg" alt="девайс-логотип">
-      </div>
-      <nav class="user-menu-header-catalog">
-        <ul class="user-menu-search">
-          <li>
-            <div class="user-menu-form-box">
-              <form class="user-menu-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="site-search">
-              <!-- <span class="visually-hidden">Поиск по сайту</span> -->
-              </label>
-              <input class="field" type="product" placeholder="Текст поиска" name="product" id="site-search" required>
-              <button class="button button-site-search" type="submit">Найти</button>
-              </form>
-            </div>
-          </li>
-          <li>Коля Петухов</li>
-          <li>Выйти</li>
-        </ul>
-        <ul class="user-menu-compare">
-          <li class="compare-product-image"></li>
-          <li class="compare-product">Сравнить</li>
+
+      <a class="logo" href="index.html">
+        <div class="device-logo-box">
+          <img src="images/device-logo.svg" width="145" height="36" alt="девайс-логотип">
+        </div>
+       </a>
+
+        <form class="user-menu-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="header-search">Поисковая строка
+          </label>
+          <input class="field" type="search" placeholder="Текст поиска" name="header-search" id="header-search" required>
+          <button class="button button-header-search" type="submit">Найти</button>
+        </form>
+         <nav class="user-navigation">
+          <ul class="user-navigation-list">
+            <li class="user-navigation-item">
+              <a class="user-navigation-link user-profile" href="#">
+                Коля Петухов
+              </a>
+            </li>
+            <li class="user-navigation-item">
+              <a class="user-navigation-link log-out" href="#">
+               Выйти
+              </a>
+            </li>
+           </ul>
+        <ul class="user-control-list">
+          <li class="user-control-list-image"></li>
+          <li class="user-control-list">Сравнить</li>
           <li>
             <span class="visually-hidden">В корзине.</span>
             <span class="menu-basket-numbers">2</span>
@@ -55,6 +62,7 @@
       </nav>
     </header>
     <main>
+      <h1 class="visually-hidden">моноподы для селфи</h1>
       <section class="monopodes-for-selfy">
         <div class="monopodes-for-selfy-text-container">
           <h1 class="monopodes-for-selfy-title">Моноподы для селфи</h1>
